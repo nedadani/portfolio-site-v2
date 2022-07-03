@@ -1,0 +1,39 @@
+@value medium, large, xLarge from 'styles/breakpoints.css';
+
+.square {
+	width: 60vw;
+	height: 60vw;
+	border: 3px solid var(--black);
+
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.name {
+	font-family: var(--ailerons-regular);
+	font-size: 20vw;
+}
+
+@media (medium) {
+	.square {
+		width: 20rem;
+		height: 20rem;
+	}
+
+	.name {
+		font-size: 6rem;
+	}
+}
+
+@media (large) {
+	.square {
+		width: 30rem;
+		height: 30rem;
+	}
+
+	.name {
+		font-size: 8rem;
+	}
+}
