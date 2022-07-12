@@ -1,6 +1,6 @@
 @value medium, large, xLarge from 'styles/breakpoints.css';
 
-.square {
+.box {
 	width: 60vw;
 	height: 60vw;
 	border: 3px solid var(--black);
@@ -11,13 +11,23 @@
 	align-items: center;
 }
 
+.heading {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+
+	font-weight: normal;
+	margin: 0;
+}
+
 .name {
 	font-family: var(--ailerons-regular);
 	font-size: 20vw;
 }
 
 @media (medium) {
-	.square {
+	.box {
 		width: 20rem;
 		height: 20rem;
 	}
@@ -28,7 +38,7 @@
 }
 
 @media (large) {
-	.square {
+	.box {
 		width: 30rem;
 		height: 30rem;
 	}
