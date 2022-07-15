@@ -22,7 +22,7 @@
 }
 
 .name {
-	font-family: var(--ailerons-regular);
+	font-family: var(--font-secondary);
 	font-size: 20vw;
 }
 
@@ -39,8 +39,8 @@
 
 @media (large) {
 	.box {
-		width: 30rem;
-		height: 30rem;
+		width: 25rem;
+		height: 25rem;
 	}
 
 	.name {
