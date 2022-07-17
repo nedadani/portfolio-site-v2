@@ -1,103 +1,104 @@
 @value medium, large, xLarge from 'styles/breakpoints.css';
 
 .hero {
-	height: 100vh;
-	width: 100%;
-	margin: auto;
+  height: 100vh;
+  width: 100%;
+  margin: auto;
 
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 
-	background: #ca4246;
-	background-color: #ca4246;
-	background: conic-gradient(
-		#ca4246 16.666%,
-		#e16541 16.666%,
-		#e16541 33.333%,
-		#f18f43 33.333%,
-		#f18f43 50%,
-		#8b9862 50%,
-		#8b9862 66.666%,
-		#476098 66.666%,
-		#476098 83.333%,
-		#a7489b 83.333%
-	);
-	background-size: 200% 100%;
-	background-repeat: repeat;
+  background: #ca4246;
+  background-color: #ca4246;
+  background: conic-gradient(
+    #ca4246 16.666%,
+    #e16541 16.666%,
+    #e16541 33.333%,
+    #f18f43 33.333%,
+    #f18f43 50%,
+    #8b9862 50%,
+    #8b9862 66.666%,
+    #476098 66.666%,
+    #476098 83.333%,
+    #a7489b 83.333%
+  );
+  background-size: 200% 100%;
+  background-repeat: repeat;
 }
 
 .subheading {
-	text-transform: uppercase;
-	font-weight: normal;
-	font-size: 4vw;
+  text-transform: uppercase;
+  font-weight: normal;
+  font-size: 4vw;
 }
 
 .links {
-	display: flex;
-	flex-direction: row;
-	justify-content: center;
-	gap: 1.5rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 1.5rem;
 
-	padding: 0 1rem;
-	margin: 1rem auto;
-	width: 100%;
+  padding: 0 1rem;
+  margin: 1rem auto;
+  width: 100%;
 }
 
 .links > * {
-	cursor: pointer;
-	background-color: transparent;
-	padding: 0;
-	border: none;
+  cursor: pointer;
+  background-color: transparent;
+  padding: 0;
+  border: none;
 }
 
 .icon {
-	height: 2rem;
-	width: auto;
+  height: 2rem;
+  width: auto;
 }
 
 @keyframes rainbow-text-animation {
-	0% {
-		background-size: 50% 100%;
-	}
-	20% {
-		background-size: 50% 100%;
-	}
-	100% {
-		background-size: 200% 100%;
-	}
+  0% {
+    background-size: 50% 100%;
+  }
+  20% {
+    background-size: 50% 100%;
+  }
+  100% {
+    background-size: 200% 100%;
+  }
 }
 
 @keyframes rainbow-text-animation-rev {
-	0% {
-		background-size: 200% 100%;
-	}
-	20% {
-		background-size: 50% 100%;
-	}
-	100% {
-		background-size: 50% 100%;
-	}
+  0% {
+    background-size: 200% 100%;
+  }
+  20% {
+    background-size: 50% 100%;
+  }
+  100% {
+    background-size: 50% 100%;
+  }
 }
 
 @media (medium) {
-	.subheading {
-		font-size: 1.3rem;
-	}
+  .subheading {
+    font-size: 1.3rem;
+  }
 
-	.links {
-		gap: 2rem;
-	}
+  .links {
+    gap: 2rem;
+  }
 }
 
 @media (large) {
-	.hero {
-		background-size: 50% 100%;
-		animation: rainbow-text-animation-rev 0.5s ease forwards;
-	}
+  .hero {
+    background-size: 50% 100%;
+    will-change: animation;
+    animation: rainbow-text-animation-rev 0.5s ease forwards;
+  }
 
-	.hero:hover {
-		animation: rainbow-text-animation 0.5s ease forwards;
-	}
+  .hero:hover {
+    animation: rainbow-text-animation 0.5s ease forwards;
+  }
 }
