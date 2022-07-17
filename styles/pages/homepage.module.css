@@ -121,3 +121,13 @@
     animation: rainbow-text-animation 0.5s ease forwards;
   }
 }
+
+@media (prefers-reduced-motion) {
+  .hero {
+    animation: none;
+  }
+
+  .hero:hover {
+    animation: none;
+  }
+}
