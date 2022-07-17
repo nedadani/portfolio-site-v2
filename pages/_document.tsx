@@ -20,7 +20,7 @@ class MyDocument extends Document {
           />
           <link
             rel="preload"
-            href="/fonts/Montserrat-variable-font.ttff"
+            href="/fonts/Montserrat-variable-font.ttf"
             as="font"
             type="font/ttf"
             crossOrigin="anonymous"
