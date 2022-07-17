@@ -13,6 +13,9 @@ const SEO: FC = () => (
       content="width=device-width, initial-scale=1.0, viewport-fit=cover"
     ></meta>
     <meta name="theme-color" content="#476098" />
+
+    <link href="/favicons/favicon-light.ico" rel="icon" media="(prefers-color-scheme: dark)" />
+    <link href="/favicons/favicon-dark.ico" rel="icon" media="(prefers-color-scheme: light)" />
   </Head>
 );
 
