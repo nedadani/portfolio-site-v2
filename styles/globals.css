@@ -1,35 +1,44 @@
 html,
 body {
-	padding: 0;
-	margin: 0;
-	font-size: 16px;
-	font-family: var(--font-primary);
+  padding: 0;
+  margin: 0;
+  font-size: 16px;
+  font-family: var(--font-primary);
+  background-color: var(--primary);
 }
 
 a {
-	color: inherit;
-	text-decoration: none;
+  color: inherit;
+  text-decoration: none;
 }
 
 * {
-	box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 @font-face {
-	font-family: 'Ailerons Regular';
-	src: url(../public/fonts/Ailerons-regular.ttf) format('truetype');
-	font-display: auto;
+  font-family: 'Ailerons Regular';
+  src: url(../public/fonts/Ailerons-regular.ttf) format('truetype');
+  font-display: auto;
 }
 
 @font-face {
-	font-family: 'Montserrat';
-	src: url(../public/fonts/Montserrat-variable-font.ttf) format('truetype');
-	font-display: auto;
+  font-family: 'Montserrat';
+  src: url(../public/fonts/Montserrat-variable-font.ttf) format('truetype');
+  font-display: auto;
 }
 
 :root {
-	--black: #000;
+  --black: #000;
+  --white: #fff;
+  --primary: #476098;
+  --red: #ca4246;
+  --orange: #e16541;
+  --yellow: #f18f43;
+  --green: #8b9862;
+  --purple: #a7489b;
+  --blue: var(--primary);
 
-	--font-primary: 'Montserrat', sans-serif;
-	--font-secondary: 'Ailerons Regular', sans-serif;
+  --font-primary: 'Montserrat', sans-serif;
+  --font-secondary: 'Ailerons Regular', sans-serif;
 }
