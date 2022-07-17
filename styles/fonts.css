@@ -1,0 +1,13 @@
+@font-face {
+  font-family: 'Ailerons Regular';
+  src: url(/fonts/Ailerons-regular.ttf) format('truetype');
+  font-weight: 400;
+  font-display: auto;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url(/fonts/Montserrat-variable-font.ttf) format('truetype');
+  font-weight: 400;
+  font-display: auto;
+}

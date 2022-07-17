@@ -16,18 +16,6 @@ a {
   box-sizing: border-box;
 }
 
-@font-face {
-  font-family: 'Ailerons Regular';
-  src: url(../public/fonts/Ailerons-regular.ttf) format('truetype');
-  font-display: auto;
-}
-
-@font-face {
-  font-family: 'Montserrat';
-  src: url(../public/fonts/Montserrat-variable-font.ttf) format('truetype');
-  font-display: auto;
-}
-
 :root {
   --black: #000;
   --white: #fff;
