@@ -1,8 +1,8 @@
 import type { NextPage } from 'next';
-import Head from 'next/head';
 import Link from 'next/link';
 
 import Box from 'components/Box';
+import SEO from 'components/SEO';
 import LinkedInIcon from 'public/icons/linkedin.svg';
 import GithubIcon from 'public/icons/github.svg';
 import EmailIcon from 'public/icons/email.svg';
@@ -13,6 +13,8 @@ import styles from 'styles/pages/homepage.module.css';
 const Home: NextPage = () => {
   return (
     <>
+      <SEO />
+
       <section className={styles.hero}>
         <Box />
         <h2 className={styles.subheading}>Front-end engineer</h2>
