@@ -20,24 +20,16 @@ const Home: NextPage = () => {
         <h2 className={styles.subheading}>Front-end engineer</h2>
         <div className={styles.links}>
           <Link href="https://www.linkedin.com/in/neda-danilevice-19ba4114a">
-            <a>
-              <LinkedInIcon className={styles.icon} />
-            </a>
+            <LinkedInIcon className={styles.icon} />
           </Link>
           <Link href="https://github.com/nedakinduryte">
-            <a>
-              <GithubIcon className={styles.icon} />
-            </a>
+            <GithubIcon className={styles.icon} />
           </Link>
           <Link href="mailto:neda.danilevice@gmail.com">
-            <a>
-              <EmailIcon className={styles.icon} />
-            </a>
+            <EmailIcon className={styles.icon} />
           </Link>
-          <Link href="/Neda-Danilevice-cv.pdf">
-            <a target="_blank" rel="noopener noreferrer">
-              <CvIcon className={styles.icon} />
-            </a>
+          <Link href="/Neda-Danilevice-cv.pdf" target="_blank" rel="noopener noreferrer">
+            <CvIcon className={styles.icon} />
           </Link>
         </div>
       </section>
