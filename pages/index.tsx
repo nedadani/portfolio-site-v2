@@ -1,5 +1,7 @@
+import React, { useEffect, useState } from 'react';
 import type { NextPage } from 'next';
 import Link from 'next/link';
+import clsx from 'clsx';
 
 import Box from 'components/Box';
 import SEO from 'components/SEO';
@@ -11,11 +13,17 @@ import CvIcon from 'public/icons/cv.svg';
 import styles from 'styles/pages/homepage.module.css';
 
 const Home: NextPage = () => {
+  const [hoverClassName, setHoverClassName] = useState('');
+
+  useEffect(() => {
+    addEventListener('mouseover', () => setHoverClassName('removeEffect'));
+  }, []);
+
   return (
     <>
       <SEO />
 
-      <section className={styles.hero}>
+      <section className={clsx(styles.hero, styles[hoverClassName])}>
         <Box />
         <h2 className={styles.subheading}>Front-end engineer</h2>
         <div className={styles.links}>

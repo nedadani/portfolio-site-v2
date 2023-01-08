@@ -63,7 +63,7 @@
   width: auto;
 }
 
-@keyframes rainbow-text-animation {
+@keyframes rainbow-animation {
   0% {
     background-size: 50% 100%;
   }
@@ -75,7 +75,7 @@
   }
 }
 
-@keyframes rainbow-text-animation-rev {
+@keyframes rainbow-animation-rev {
   0% {
     background-size: 200% 100%;
   }
@@ -114,16 +114,18 @@
     );
     background-size: 50% 100%;
     will-change: animation;
-    animation: rainbow-text-animation-rev 0.5s ease forwards;
+    animation: rainbow-animation-rev 0.5s ease forwards;
   }
 
-  .hero:hover {
-    animation: rainbow-text-animation 0.5s ease forwards;
+  .hero:hover,
+  .removeEffect {
+    animation: rainbow-animation 0.5s ease forwards;
   }
 }
 
 @media (prefers-reduced-motion) {
   .hero {
+    background-size: 200% 100%;
     animation: none;
   }
 
