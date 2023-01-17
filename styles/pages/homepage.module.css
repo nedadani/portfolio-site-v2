@@ -52,7 +52,7 @@
   width: auto;
 }
 
-.hero > button {
+.hero > a {
   position: absolute;
   bottom: var(--hero-bottom);
 }
@@ -67,10 +67,6 @@
   padding: 64px 20px;
   margin: 0 auto;
   max-width: var(--projects-max-width);
-
-  display: flex;
-  flex-direction: column;
-  gap: 48px;
 }
 
 .projects h3 {

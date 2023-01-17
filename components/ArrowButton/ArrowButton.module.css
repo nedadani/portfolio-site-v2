@@ -1,6 +1,5 @@
-.button {
+.arrowButton {
   border: 2px solid var(--black);
-  background-color: transparent;
   color: var(--black);
   padding: 2px 4px;
 
@@ -12,6 +11,6 @@
   cursor: pointer;
 }
 
-.button:hover {
+.arrowButton:hover {
   transform: scale(1.1);
 }

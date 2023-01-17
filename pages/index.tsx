@@ -3,7 +3,7 @@ import type { NextPage } from 'next';
 import Link from 'next/link';
 
 import Box from 'components/Box';
-import Button from 'components/Button';
+import ArrowButton from 'components/ArrowButton';
 import Project from 'components/Project';
 import SEO from 'components/SEO';
 
@@ -11,7 +11,6 @@ import LinkedInIcon from 'public/icons/linkedin.svg';
 import GithubIcon from 'public/icons/github.svg';
 import EmailIcon from 'public/icons/email.svg';
 import CvIcon from 'public/icons/cv.svg';
-import ArrowDowmIcon from 'public/icons/arrow-down.svg';
 
 import { PROJECTS } from 'constants/Projects.constant';
 
@@ -40,11 +39,10 @@ const Home: NextPage = () => {
           </Link>
         </div>
 
-        <Button>
-          <ArrowDowmIcon />
-        </Button>
+        <ArrowButton href="#projects" />
       </section>
-      <section className={styles.projects}>
+
+      <section className={styles.projects} id="projects">
         <h3>Projects</h3>
 
         {PROJECTS.map((project) => (
