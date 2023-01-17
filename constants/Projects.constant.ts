@@ -28,7 +28,7 @@ const PROJECTS = [
     desktopImages: [MinesweeperDesktop1, MinesweeperDesktop2, MinesweeperDesktop3],
     summary: 'A simple minesweeper game.',
     description:
-      'No impressive tech here, built for a sole purpose to practice algorithms (DFS specifically) and have fun in the meantime. State management using Jotai. The app is mobile and desktop-friendly.',
+      "No impressive tech here, built for a sole purpose to practice algorithms (DFS specifically). State management implemented using Jotai. App's theme auto-adjusts to the user's preferred color scheme. The game is mobile and desktop-friendly.",
     link: 'https://celebrated-mousse-6e442a.netlify.app',
     github: 'https://github.com/nedakinduryte/minesweeper',
   },
