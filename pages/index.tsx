@@ -3,11 +3,13 @@ import type { NextPage } from 'next';
 import Link from 'next/link';
 
 import Box from 'components/Box';
+import Button from 'components/Button';
 import SEO from 'components/SEO';
 import LinkedInIcon from 'public/icons/linkedin.svg';
 import GithubIcon from 'public/icons/github.svg';
 import EmailIcon from 'public/icons/email.svg';
 import CvIcon from 'public/icons/cv.svg';
+import ArrowDowmIcon from 'public/icons/arrow-down.svg';
 
 import styles from 'styles/pages/homepage.module.css';
 
@@ -33,6 +35,10 @@ const Home: NextPage = () => {
             <CvIcon className={styles.icon} />
           </Link>
         </div>
+
+        <Button>
+          <ArrowDowmIcon />
+        </Button>
       </section>
     </>
   );
