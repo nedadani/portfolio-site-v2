@@ -29,7 +29,7 @@ const PROJECTS = [
     summary: 'A simple minesweeper game.',
     description:
       'No impressive tech here, built for a sole purpose to practice algorithms (DFS specifically) and have fun in the meantime. State management using Jotai. The app is mobile and desktop-friendly.',
-    link: '',
+    link: 'https://celebrated-mousse-6e442a.netlify.app',
     github: 'https://github.com/nedakinduryte/minesweeper',
   },
 ];
