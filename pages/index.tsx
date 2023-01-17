@@ -4,12 +4,16 @@ import Link from 'next/link';
 
 import Box from 'components/Box';
 import Button from 'components/Button';
+import Project from 'components/Project';
 import SEO from 'components/SEO';
+
 import LinkedInIcon from 'public/icons/linkedin.svg';
 import GithubIcon from 'public/icons/github.svg';
 import EmailIcon from 'public/icons/email.svg';
 import CvIcon from 'public/icons/cv.svg';
 import ArrowDowmIcon from 'public/icons/arrow-down.svg';
+
+import { PROJECTS } from 'constants/Projects.constant';
 
 import styles from 'styles/pages/homepage.module.css';
 
@@ -20,25 +24,32 @@ const Home: NextPage = () => {
 
       <section className={styles.hero}>
         <Box />
-        <h2 className={styles.subheading}>Front-end engineer</h2>
+        <h2>Front-end engineer</h2>
         <div className={styles.links}>
           <Link href="https://www.linkedin.com/in/neda-danilevice-19ba4114a" target="_blank">
-            <LinkedInIcon className={styles.icon} />
+            <LinkedInIcon />
           </Link>
           <Link href="https://github.com/nedakinduryte" target="_blank">
-            <GithubIcon className={styles.icon} />
+            <GithubIcon />
           </Link>
           <Link href="mailto:neda.danilevice@gmail.com">
-            <EmailIcon className={styles.icon} />
+            <EmailIcon />
           </Link>
           <Link href="/Neda-Danilevice-cv.pdf" target="_blank" rel="noopener noreferrer">
-            <CvIcon className={styles.icon} />
+            <CvIcon />
           </Link>
         </div>
 
-        {/* <Button>
+        <Button>
           <ArrowDowmIcon />
-        </Button> */}
+        </Button>
+      </section>
+      <section className={styles.projects}>
+        <h3>Projects</h3>
+
+        {PROJECTS.map((project) => (
+          <Project {...project} key={project.name} />
+        ))}
       </section>
     </>
   );
