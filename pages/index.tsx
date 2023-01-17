@@ -1,7 +1,6 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import type { NextPage } from 'next';
 import Link from 'next/link';
-import clsx from 'clsx';
 
 import Box from 'components/Box';
 import SEO from 'components/SEO';
@@ -13,24 +12,18 @@ import CvIcon from 'public/icons/cv.svg';
 import styles from 'styles/pages/homepage.module.css';
 
 const Home: NextPage = () => {
-  const [hoverClassName, setHoverClassName] = useState('');
-
-  useEffect(() => {
-    addEventListener('mouseover', () => setHoverClassName('removeEffect'));
-  }, []);
-
   return (
     <>
       <SEO />
 
-      <section className={clsx(styles.hero, styles[hoverClassName])}>
+      <section className={styles.hero}>
         <Box />
         <h2 className={styles.subheading}>Front-end engineer</h2>
         <div className={styles.links}>
-          <Link href="https://www.linkedin.com/in/neda-danilevice-19ba4114a">
+          <Link href="https://www.linkedin.com/in/neda-danilevice-19ba4114a" target="_blank">
             <LinkedInIcon className={styles.icon} />
           </Link>
-          <Link href="https://github.com/nedakinduryte">
+          <Link href="https://github.com/nedakinduryte" target="_blank">
             <GithubIcon className={styles.icon} />
           </Link>
           <Link href="mailto:neda.danilevice@gmail.com">
