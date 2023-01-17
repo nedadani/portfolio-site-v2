@@ -79,7 +79,7 @@
 }
 
 .projects article {
-  margin-bottom: 48px;
+  margin-bottom: 64px;
 }
 
 @media (medium) {
@@ -91,7 +91,7 @@
   .projects {
     --projects-max-width: 640px;
     --projects-font-size: 24px;
-    --projects-margin: 0 0 64px;
+    --projects-margin: 0 0 72px;
   }
 }
 
