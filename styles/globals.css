@@ -1,10 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
 html,
 body {
   padding: 0;
   margin: 0;
   font-size: 16px;
   font-family: var(--font-primary);
-  background-color: var(--primary);
+  background-color: var(--white);
 }
 
 a {
@@ -19,14 +21,8 @@ a {
 :root {
   --black: #000;
   --white: #fff;
-  --primary: #476098;
-  --red: #ca4246;
-  --orange: #e16541;
-  --yellow: #f18f43;
-  --green: #8b9862;
-  --purple: #a7489b;
-  --blue: var(--primary);
+  --dark-grey: #333;
+  --light-grey: #e5e5e5;
 
-  --font-primary: 'Montserrat', sans-serif;
-  --font-secondary: 'Ailerons Regular', sans-serif;
+  --font-primary: 'Inter', sans-serif;
 }
