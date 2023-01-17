@@ -18,7 +18,7 @@ const PROJECTS = [
     desktopImages: [OnlineStoreDesktop1, OnlineStoreDesktop2, OnlineStoreDesktop3],
     summary: 'An e-commerce website for a flower store in Lithuania.',
     description:
-      'Server-side rendering and static site generation support via Next.js. Multi-language integration using React-intl. E2E testing using Cypress. Payments integration with Stripe.',
+      'Server-side rendering and static site generation support via Next.js. Multi-language integration using React-intl. State management using Recoil. E2E testing using Cypress. Payments integration with Stripe.',
     link: 'https://www.jusuziedas.lt/en',
     github: '',
   },
@@ -28,7 +28,7 @@ const PROJECTS = [
     desktopImages: [MinesweeperDesktop1, MinesweeperDesktop2, MinesweeperDesktop3],
     summary: 'A simple minesweeper game.',
     description:
-      'No impressive tech here, built for a sole purpose to practice algorithms (DFS specifically) and have fun in the meantime. Mobile and desktop-friendly.',
+      'No impressive tech here, built for a sole purpose to practice algorithms (DFS specifically) and have fun in the meantime. State management using Jotai. The app is mobile and desktop-friendly.',
     link: '',
     github: 'https://github.com/nedakinduryte/minesweeper',
   },
