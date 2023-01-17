@@ -7,12 +7,8 @@ import ArrowButton from 'components/ArrowButton';
 import Project from 'components/Project';
 import SEO from 'components/SEO';
 
-import LinkedInIcon from 'public/icons/linkedin.svg';
-import GithubIcon from 'public/icons/github.svg';
-import EmailIcon from 'public/icons/email.svg';
-import CvIcon from 'public/icons/cv.svg';
-
 import { PROJECTS } from 'constants/Projects.constant';
+import { CONTACT } from 'constants/Contact.constant';
 
 import styles from 'styles/pages/homepage.module.css';
 
@@ -24,19 +20,16 @@ const Home: NextPage = () => {
       <section className={styles.hero}>
         <Box />
         <h2>Front-end engineer</h2>
+
         <div className={styles.links}>
-          <Link href="https://www.linkedin.com/in/neda-danilevice-19ba4114a" target="_blank">
-            <LinkedInIcon />
-          </Link>
-          <Link href="https://github.com/nedakinduryte" target="_blank">
-            <GithubIcon />
-          </Link>
-          <Link href="mailto:neda.danilevice@gmail.com">
-            <EmailIcon />
-          </Link>
-          <Link href="/Neda-Danilevice-cv.pdf" target="_blank" rel="noopener noreferrer">
-            <CvIcon />
-          </Link>
+          {CONTACT.map((contact) => {
+            const Icon = contact.icon;
+            return (
+              <Link href={contact.href} target="_blank" rel={contact.rel}>
+                <Icon />
+              </Link>
+            );
+          })}
         </div>
 
         <ArrowButton href="#projects" />

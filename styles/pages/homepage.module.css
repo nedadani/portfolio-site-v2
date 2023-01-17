@@ -78,6 +78,10 @@
   margin: var(--projects-margin);
 }
 
+.projects article {
+  margin-bottom: 48px;
+}
+
 @media (medium) {
   .hero {
     --hero-gap: 24px;
