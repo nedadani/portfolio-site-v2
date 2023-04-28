@@ -10,6 +10,12 @@ import MinesweeperMobile3 from 'public/images/minesweeper/mobile-minesweeper-3.p
 import MinesweeperDesktop1 from 'public/images/minesweeper/desktop-minesweeper-1.png';
 import MinesweeperDesktop2 from 'public/images/minesweeper/desktop-minesweeper-2.png';
 import MinesweeperDesktop3 from 'public/images/minesweeper/desktop-minesweeper-3.png';
+import TetrisMobile1 from 'public/images/tetris/mobile-tetris-1.png';
+import TetrisMobile2 from 'public/images/tetris/mobile-tetris-2.png';
+import TetrisMobile3 from 'public/images/tetris/mobile-tetris-3.png';
+import TetrisDesktop1 from 'public/images/tetris/desktop-tetris-1.png';
+import TetrisDesktop2 from 'public/images/tetris/desktop-tetris-2.png';
+import TetrisDesktop3 from 'public/images/tetris/desktop-tetris-3.png';
 
 const PROJECTS = [
   {
@@ -21,6 +27,16 @@ const PROJECTS = [
       'Server-side rendering and static site generation support via Next.js. Multi-language integration using React-intl. State management using Recoil. E2E testing using Cypress. Payments integration with Stripe.',
     link: 'https://www.jusuziedas.lt/en',
     github: '',
+  },
+  {
+    name: 'Tetris',
+    mobileImages: [TetrisMobile1, TetrisMobile2, TetrisMobile3],
+    desktopImages: [TetrisDesktop1, TetrisDesktop2, TetrisDesktop3],
+    summary: 'A simple tetris game.',
+    description:
+      'No scoring, no levels, just mindless block building. Took me way too long to build as every debugging session would turn into a playing session. Hooks-based implementation. State management using Jotai. The game is mobile and desktop-friendly.',
+    link: 'https://profound-squirrel-37a56e.netlify.app',
+    github: 'https://github.com/nedakinduryte/tetris',
   },
   {
     name: 'Minesweeper',
