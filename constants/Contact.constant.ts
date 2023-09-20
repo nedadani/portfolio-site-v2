@@ -9,7 +9,7 @@ const CONTACT = [
     icon: LinkedInIcon,
   },
   {
-    href: 'https://github.com/nedakinduryte',
+    href: 'https://github.com/nedadani',
     icon: GithubIcon,
   },
   {

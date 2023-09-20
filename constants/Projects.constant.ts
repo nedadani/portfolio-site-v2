@@ -36,7 +36,7 @@ const PROJECTS = [
     description:
       'No scoring, no levels, just mindless block building. Took me way too long to build as every debugging session would turn into a playing session. Hooks-based implementation. State management using Jotai. The game is mobile and desktop-friendly.',
     link: 'https://profound-squirrel-37a56e.netlify.app',
-    github: 'https://github.com/nedakinduryte/tetris',
+    github: 'https://github.com/nedadani/tetris',
   },
   {
     name: 'Minesweeper',
@@ -46,7 +46,7 @@ const PROJECTS = [
     description:
       "No impressive tech here, built for a sole purpose to practice algorithms (DFS specifically). State management implemented using Jotai. App's theme auto-adjusts to the user's preferred color scheme. The game is mobile and desktop-friendly.",
     link: 'https://celebrated-mousse-6e442a.netlify.app',
-    github: 'https://github.com/nedakinduryte/minesweeper',
+    github: 'https://github.com/nedadani/minesweeper',
   },
 ];
 
