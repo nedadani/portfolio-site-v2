@@ -19,7 +19,7 @@ const Home: NextPage = () => {
 
       <section className={styles.hero}>
         <Box />
-        <h2>Front-end engineer</h2>
+        <h2>Software Engineer</h2>
 
         <div className={styles.links}>
           {CONTACT.map((contact) => {
