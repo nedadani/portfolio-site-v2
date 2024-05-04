@@ -25,7 +25,7 @@ const Home: NextPage = () => {
           {CONTACT.map((contact) => {
             const Icon = contact.icon;
             return (
-              <Link href={contact.href} target="_blank" rel={contact.rel} key={contact.href}>
+              <Link href={contact.href} target="_blank" key={contact.href}>
                 <Icon />
               </Link>
             );
