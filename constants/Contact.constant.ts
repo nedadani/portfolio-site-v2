@@ -12,15 +12,15 @@ const CONTACT = [
     href: 'https://github.com/nedadani',
     icon: GithubIcon,
   },
-  {
-    href: 'mailto:neda.danilevice@gmail.com',
-    icon: EmailIcon,
-  },
-  {
-    href: '/Neda-Danilevice-cv.pdf',
-    icon: CvIcon,
-    rel: 'noopener noreferrer',
-  },
+  // {
+  //   href: 'mailto:neda.danilevice@gmail.com',
+  //   icon: EmailIcon,
+  // },
+  // {
+  //   href: '/Neda-Danilevice-cv.pdf',
+  //   icon: CvIcon,
+  //   rel: 'noopener noreferrer',
+  // },
 ];
 
 export { CONTACT };
